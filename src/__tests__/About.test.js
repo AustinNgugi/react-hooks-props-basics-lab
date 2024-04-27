@@ -10,7 +10,8 @@ test("renders a <p> element with the bio from props", () => {
 });
 
 test("does not render a <p> element if the bio is not included in props", () => {
-  const { container } = render(<About links={user.links} />);
+  const { container } = render(<
+    About links={user.links} />);
   expect(container.querySelector("p")).toBeNull();
 });
 
